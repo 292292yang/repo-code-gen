@@ -1,0 +1,78 @@
+# Go 编译产物
+# 可执行文件
+*.exe
+*.out
+*.test
+*.bin
+# 交叉编译产出
+/dlv
+/tmp/
+/_obj/
+/_test/
+*.prof
+*.cover
+coverage.out
+
+# Go 模块缓存/本地替换
+go.mod.tidy
+go.sum.bak
+vendor/
+# 本地开发临时mod缓存
+.gomodcache/
+
+# GoLand / IDEA 配置
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+# IDE运行缓存
+.apt_generated
+.springBeans.sts-cache
+# 本地运行配置
+runConfigurations/
+
+# VSCode 兼容（可选删除）
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+.env
+.env.local
+.env.*.local
+
+# 二进制资源、密钥、证书
+*.pem
+*.key
+*.crt
+*.p12
+secret*.txt
+config.local.yaml
+config.dev.yml
+
+# 数据库、缓存文件
+*.db
+*.sqlite
+*.sqlite3
+dump.sql
+redis.rdb
+
+# 日志目录
+logs/
+log/
+
+# 临时编译/打包目录
+dist/
+build/
+target/
+
+# 容器相关（docker）
+.dockerignore
+docker-compose.override.yml
